@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "552468437666",
+    "firebase_url": "https://ramadan-timings.firebaseio.com",
+    "project_id": "ramadan-timings",
+    "storage_bucket": "ramadan-timings.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:552468437666:android:5f0e1feb1119c841",
+        "android_client_info": {
+          "package_name": "com.test.notes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "552468437666-m6pgtmpum7eb3qs1p00uou6u52jsl0em.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAmrBq3wcT5BUYY0XDqdSRtkzi_HyPzWkk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,94 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    >
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_top"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:minHeight="?attr/actionBarSize"
+        android:background="#fff"
+        >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Notes"
+            android:layout_gravity="center"
+            android:textColor="#000"
+            android:textAllCaps="true"
+            android:textSize="@dimen/toobartextsize"
+            android:id="@+id/toolbar_title" />
+
+
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/toolbar_top"
+        android:padding="10dp"
+
+        >
+
+        <EditText
+            android:id="@+id/etNotesTitle"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:keepScreenOn="true"
+            android:textSize="15sp"
+            android:background="@null"
+            android:hint="@string/notes_title"
+            />
+        <EditText
+            android:id="@+id/etNotes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:keepScreenOn="true"
+            android:textSize="14sp"
+            android:lines="8"
+
+        android:hint="@string/write_something"
+            android:background="@null"
+            android:layout_below="@id/etNotesTitle"
+
+            />
+    </LinearLayout>
+
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+
+
+        <LinearLayout
+            android:id="@+id/llSaveNotes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:background="@drawable/bg_button"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:onClick="saveNotes"
+            tools:ignore="UselessParent">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:tint="#fff"
+                android:backgroundTint="#fff"
+                android:src="@drawable/tick" />
+
+        </LinearLayout>
+
+</RelativeLayout>
